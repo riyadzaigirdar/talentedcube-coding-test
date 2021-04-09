@@ -1,32 +1,21 @@
 .App-header {
-  position: relative;
   width: 100%;
-  max-width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-header > img, .App-header > video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  z-index: -2;
-  object-fit: cover;
-  object-position: center center;
+.App-header > img{
+  width: 640px;
+  height: 360px;
 }
+
 
 .App-header > .isActive {
   z-index: -1;
 }
 
 #select-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  z-index: 1;
 }
